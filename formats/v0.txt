@@ -1,0 +1,3 @@
+./quera/-/problem.zip/in/input*.txt
+./quera/-/problem.zip/output/output*.txt
+./quera/-/problem.zip/tester.cpp

@@ -1,0 +1,2 @@
+./contest.zip/-.zip/data/secret/*.in
+./contest.zip/-.zip/data/secret/*.ans
