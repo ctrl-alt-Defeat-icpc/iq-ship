@@ -1,4 +1,5 @@
 from iqs.utils import os, zipfile, shutil, sys
+from iqs.changers.changer01 import run as run01
 from iqs.changers.changer20 import run as run20
 from iqs.changers.changer30 import run as run30
 from iqs.changers.changer40 import run as run40
@@ -48,3 +49,5 @@ def run(details):
         run40(temp_src, details['desdir'])
     elif details['desver'] == 0 and details['srcver'] == 5:
         run50(temp_src, details['desdir'])
+    elif details['desver'] == 1 and details['srcver'] == 0:
+        run01(temp_src, details['desdir'])
