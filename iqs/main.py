@@ -16,8 +16,8 @@ def checkFormatVersion(x, y):
 def main():
     srcdir = input('Enter soruce directory (src default): ').strip() or config.DEFAULT_SRC_DIR
     desdir = input('Enter destination directory (des default): ').strip() or config.DEFAULT_DES_DIR
-    src_format_version = int(input('Enter version of srouce format (2 default): ').strip() or config.DEFAULT_SRC_FORMAT_VERSION)
-    des_format_version = int(input('Enter version of destination format (0 default): ').strip() or config.DEFAULT_DES_FORMAT_VERSION)
+    src_format_version = int(input(f'Enter version of srouce format ({config.DEFAULT_SRC_FORMAT_VERSION} default): ').strip() or config.DEFAULT_SRC_FORMAT_VERSION)
+    des_format_version = int(input(f'Enter version of destination format ({config.DEFAULT_DES_FORMAT_VERSION} default): ').strip() or config.DEFAULT_DES_FORMAT_VERSION)
 
     checkExistence(srcdir, desdir)
     checkFormatVersion(src_format_version, des_format_version)

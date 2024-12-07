@@ -86,7 +86,7 @@ contest.zip
                 [test_case_number].in
                 [test_case_number].ans
 ```
-***hint: If the number of test cases is 2 digits, the first test case starts at `01`.***
+hint: If the number of test cases is 2 digits, the first test case starts at `01`.
 </details>
 
 <details><summary><strong>version 3</strong></summary>
@@ -97,6 +97,6 @@ contest.zip
         [test_case_number].in
         [test_case_number].ans
 ```
-***There is a bit of instability in this version. It can be either completely normal or in the form `x-y.in` or `.ans`. Where `x` is `0` or `1` (zero means the test case is `public` and other means `private`) and y starts at `01`.***
+There is a bit of instability in this version. It can be either completely normal or in the form `x-y.in` or `.ans`. Where `x` is `0` or `1` (zero means the test case is `public` and other means `private`) and y starts at `01`.
 </details>
 

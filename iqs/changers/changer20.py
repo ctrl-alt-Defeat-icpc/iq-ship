@@ -1,4 +1,5 @@
-from iqs.utils import os, zipfile, shutil
+from iqs.utils import os, shutil
+from .common import io2zip
 
 def run(src, des):
     des_path = os.path.join(des, 'contest')
@@ -28,17 +29,4 @@ def run(src, des):
                     os.path.join(problem_src_path, testcase_src),
                     os.path.join(problem_des_path_output, testcase_des)
                 )
-
-        # zipping folder
-        with zipfile.ZipFile(os.path.join(problem_des_path, 'problem.zip'), 'w', zipfile.ZIP_DEFLATED) as zipf:
-            for dir in [problem_des_path_input, problem_des_path_output]:
-                for root, _, files in os.walk(dir):
-                    for file in files:
-                        file_path = os.path.join(root, file)
-                        arcname = os.path.relpath(file_path, problem_des_path)
-                        zipf.write(file_path, arcname)
-                        os.remove(file_path)
-        
-        # deleting extra folders
-        shutil.rmtree(problem_des_path_input)
-        shutil.rmtree(problem_des_path_output)
+        io2zip(problem_des_path, problem_des_path_input, problem_des_path_output)
