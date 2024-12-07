@@ -18,6 +18,7 @@ python -m iqs.main
 | v1 | NO | [tcbank](https://github.com/EnAnsasri/cph) |
 | v2 | NO | space (sajjad university icpc contest) |
 | v3 | NO | internet icpc asia west (Tehran) 2024 |
+| v4 | NO | icpc 2023 (asia west - onsite - Tehran) |
 
 ## Version Structures
 You can see the structures of the different versions in this section. Click on each section to expand it. You can see the uses of these versions in the Format Table.
@@ -80,7 +81,7 @@ int main(int argc, char const *argv[])
 
 ```bash
 contest.zip
-    ./[problem_letter].zip
+    [problem_letter].zip
         ./data
             ./secret
                 [test_case_number].in
@@ -100,3 +101,19 @@ hint: If the number of test cases is 2 digits, the first test case starts at `01
 There is a bit of instability in this version. It can be either completely normal or in the form `x-y.in` or `.ans`. Where `x` is `0` or `1` (zero means the test case is `public` and other means `private`) and y starts at `01`.
 </details>
 
+<details><summary><strong>version 4</strong></summary>
+
+```bash
+[contest_name].zip
+    ./testdata
+        ./[problem_letter]-[problem_name]
+            ./data
+                ./samble
+                    [test_case_number].in
+                    [test_case_number].ans
+                ./secret
+                    [test_case_number].in
+                    [test_case_number].ans
+```
+hint: files format `x-y.in` or `.ans`. Where `x` is `0` or `1` (zero means the test case is `public` and other means `private`) and y starts at `01`.
+</details>

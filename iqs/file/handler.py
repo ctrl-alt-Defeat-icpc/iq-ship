@@ -1,6 +1,7 @@
 from iqs.utils import os, zipfile, shutil, sys
 from iqs.changers.changer20 import run as run20
 from iqs.changers.changer30 import run as run30
+from iqs.changers.changer40 import run as run40
 
 def unzipSrc(dir):
     for root, dirs, files in os.walk(dir):
@@ -42,3 +43,5 @@ def run(details):
         run20(temp_src, details['desdir'])
     elif details['desver'] == 0 and details['srcver'] == 3:
         run30(temp_src, details['desdir'])
+    elif details['desver'] == 0 and details['srcver'] == 4:
+        run40(temp_src, details['desdir'])
