@@ -29,4 +29,4 @@ def run(src, des):
                     os.path.join(problem_src_path, testcase_src),
                     os.path.join(problem_des_path_output, testcase_des)
                 )
-        io2zip(problem_des_path, problem_des_path_input, problem_des_path_output)
+        io2zip(problem_des_path)

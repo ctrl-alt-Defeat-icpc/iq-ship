@@ -36,4 +36,4 @@ def run(src, des):
             shutil.copy(os.path.join(problem_src_path, fin), os.path.join(problem_des_path_input, testcase_des_input))
             shutil.copy(os.path.join(problem_src_path, fout), os.path.join(problem_des_path_output, testcase_des_output))
 
-        io2zip(problem_des_path, problem_des_path_input, problem_des_path_output)
+        io2zip(problem_des_path)

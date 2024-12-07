@@ -46,7 +46,7 @@ def run(src, des):
             shutil.copy(fin, os.path.join(problem_des_path_input, testcase_des_input))
             shutil.copy(fout, os.path.join(problem_des_path_output, testcase_des_output))
 
-        io2zip(problem_des_path, problem_des_path_input, problem_des_path_output)
+        io2zip(problem_des_path)
         print(f'{question_names[-1]} converted successfully!')
     question_names.sort()
     with open(os.path.join(des_path, 'question-names.txt'), 'w') as name_file:
