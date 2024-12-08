@@ -135,6 +135,7 @@ hint: files format `x-y.in` or `.ans`. Where `x` is `0` or `1` (zero means the t
 </details>
 
 <details><summary><strong>version 6</strong></summary>
+
 ```bash
 [contest_name].zip
     ./[contest_name]
