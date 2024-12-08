@@ -15,12 +15,12 @@ python -m iqs.main
 | version | checker | uses |
 |:---:|:---:|:---:|
 | v0 | YES | quera |
-| v1 | NO | [tcbank](https://github.com/EnAnsasri/cph) |
+| v1 | NO | [tcbank](https://github.com/EnAnsari/cph) |
 | v2 | NO | space (sajjad university icpc contest) |
 | v3 | NO | internet icpc asia west (Tehran) 2024 |
 | v4 | NO | icpc 2023 (asia west - onsite - Tehran) |
 | v5 (not completed!) | YES | icpc 2022 (asia west - onsite - Tehran) |
-| v6 | NO | icpc world final (2021, 2020, 2019) |
+| v6 | NO | icpc world final 2021 |
 
 ## Version Structures
 You can see the structures of the different versions in this section. Click on each section to expand it. You can see the uses of these versions in the Format Table.
