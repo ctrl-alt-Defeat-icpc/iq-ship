@@ -4,6 +4,7 @@ from iqs.changers.changer20 import run as run20
 from iqs.changers.changer30 import run as run30
 from iqs.changers.changer40 import run as run40
 from iqs.changers.changer50 import run as run50
+from iqs.changers.changer60 import run as run60
 
 def unzipSrc(dir):
     for root, dirs, files in os.walk(dir):
@@ -49,5 +50,7 @@ def run(details):
         run40(temp_src, details['desdir'])
     elif details['desver'] == 0 and details['srcver'] == 5:
         run50(temp_src, details['desdir'])
+    elif details['desver'] == 0 and details['srcver'] == 6:
+        run60(temp_src, details['desdir'])
     elif details['desver'] == 1 and details['srcver'] == 0:
         run01(temp_src, details['desdir'])
