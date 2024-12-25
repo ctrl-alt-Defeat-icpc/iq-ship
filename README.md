@@ -2,6 +2,8 @@
 
 you can change dataset format easily by this program from [domjudge](https://www.domjudge.org/) format to [quera class](https://quera.org/) format! We will explain how it works below.
 
+important hint: auto changer for quera testers is inactive yet. so you should use manual changing. e.g. this [repo](https://github.com/ctrl-alt-Defeat-icpc/checker-manual-iqs).
+
 ## Quera Format
 quera platform used [this test structure +](https://github.com/mjnaderi/Sharif-Judge/blob/docs/v1.4/tests_structure.md#tester-method). this platform uses 2 way of judgment. input/output method and tester method.
 
