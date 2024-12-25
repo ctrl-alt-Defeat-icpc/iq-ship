@@ -4,5 +4,5 @@ from iqs.utils import os
 DEFAULT_SRC_DIR = os.path.join(os.getcwd(), 'src')
 DEFAULT_DES_DIR = os.path.join(os.getcwd(), 'des')
 DEFAULT_DES_FORMAT_VERSION = 0
-DEFAULT_SRC_FORMAT_VERSION = 6
-VERSIONS_THRESHOLD = 6
+DEFAULT_SRC_FORMAT_VERSION = 7
+VERSIONS_THRESHOLD = 7

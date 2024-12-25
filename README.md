@@ -21,6 +21,7 @@ python -m iqs.main
 | v4 | NO | icpc 2023 (asia west - onsite - Tehran) |
 | v5 (not completed!) | YES | icpc 2022 (asia west - onsite - Tehran) |
 | v6 | NO | icpc world final 2021 |
+| v7 (not completed!) | YES | icpc 2024 (asia west - onsite - Tehran) |
 
 ## Version Structures
 You can see the structures of the different versions in this section. Click on each section to expand it. You can see the uses of these versions in the Format Table.
@@ -143,4 +144,17 @@ hint: files format `x-y.in` or `.ans`. Where `x` is `0` or `1` (zero means the t
             [test_case_number].in
             [test_case_number].ans
 ```
+</details>
+
+<details><summary><strong>version 7</strong></summary>
+
+```bash
+[contest_name].zip
+    ./[problem_letter] # except __MAXOSX
+        [test_case_number].in
+        [test_case_number].ans
+        ./checker
+            checker.cpp # + Makefile and testlib.h
+```
+hint: files format `x-y.in` or `.ans`. Where `x` is `0` or `1` (zero means the test case is `public` and other means `private`) and y starts at `01`.
 </details>
